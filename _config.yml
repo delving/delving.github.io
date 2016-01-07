@@ -11,7 +11,7 @@ email: info@delving.eu
 description: > # this means to ignore newlines until "baseurl:"
   Delving provides open-source solutions for the Cultural Heritage sector
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.delving.eu" # the base hostname & protocol for your site
+url: "http://delving.github.io" # the base hostname & protocol for your site
 twitter_username: delvingEU
 github_username:  delving
 timezone: Europe/Amsterdam
