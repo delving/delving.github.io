@@ -1,0 +1,23 @@
+<header class="site-header" id="site-top">
+
+<div class="container">
+    <div class="row">
+
+        <div class="site-branding col-md-4">
+            <a href="{{ site.baseurl }}/">
+                <img src="{{site.baseurl}}/assets/img/delving-logo-small.png" width="64"/>
+                <span class="site-title">{{ site.title }}</span>
+            </a>
+        </div>
+
+        <nav class="site-nav col-md-8">
+            <!--{% for my_page in site.pages %}-->
+            <!--{% if my_page.title %}-->
+            <!--<a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>-->
+            <!--{% endif %}-->
+            <!--{% endfor %}-->
+            <a class="page-link" data-scroll href="#contact">Contact</a>
+        </nav>
+    </div>
+</div>
+</header>

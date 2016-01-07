@@ -1,0 +1,246 @@
+body {
+  background: $gray-darker;
+  color: $gray-lighter;
+  font-size: 16px;
+  font-weight: 300;
+  height: 100%;
+  line-height: 1.6em;
+  text-shadow: none;
+}
+
+/*===========================
+  --- Site header & branding ----
+=========================== */
+
+.site-header {
+  background: $delving-blue-dark;
+  padding: 10px 0;
+}
+
+.site-branding {
+  line-height: 65px;
+  a {
+    color: $white;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 200;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  img {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+}
+
+.site-nav {
+  text-align: right;
+  margin-top: 25px;
+  .page-link {
+    color: $white;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .site-header,
+  .site-nav {
+    text-align: center;
+  }
+}
+
+/*===========================
+  --- Section basics ----
+=========================== */
+
+.section {
+  margin: 0;
+  padding: 60px 0 60px 0;
+  &.thick {
+    padding: 100px 0 100px 0;
+  }
+  .section-icon {
+    font-size: 5em;
+    text-align: center;
+  }
+  .section-heading {
+    //font-weight: 100;
+  font-family: "source-serif-pro",Georgia,"Times New Roman",Times,serif;
+    //margin-top: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+  .section-sub-heading {
+    font-weight: 100;
+    //    margin-top: 0px;
+    text-align: center;
+    font-size: 140%;
+  }
+}
+
+/*===========================
+  --- Intro section ----
+=========================== */
+
+.intro {
+  text-align: center;
+}
+
+/*===========================
+  --- Services section ----
+=========================== */
+
+.services {
+  background: $section-services-bg;
+  text-align: center;
+  .section-icon {
+    @include icon-circle($delving-blue, $gray-lighter, 80px, 148px);
+    border: 1px solid $white;
+  }
+
+  .section-heading {
+    font-weight: normal;
+    margin: 20px 0;
+  }
+  .body {
+    color: $gray-lighter;
+  }
+  .service {
+    margin-bottom: 40px;
+    @media (min-width: 1000px) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+/*===========================
+  --- Open-source section ----
+=========================== */
+
+.open-source {
+  background: $section-open-source-bg;
+  text-align: center;
+  // svg icon
+  .icon {
+    > svg {
+      display: inline-block;
+      width: 148px;
+      height: 148px;
+      vertical-align: middle;
+      path {
+        fill: $gray-light;
+      }
+    }
+  }
+  .section-heading {
+    margin-top: 20px;
+  }
+}
+
+/*===========================
+  --- Articles section ----
+=========================== */
+
+.articles {
+  background: $section-articles-bg;
+  color: $gray-lighter;
+  text-align: center;
+  .section-icon {
+    @include icon-circle($gray-light, $gray-darker, 80px, 148px);
+    //border: 1px solid $gray-light;
+  }
+  .section-heading {
+    font-weight: normal;
+    margin: 20px 0;
+  }
+  .body {
+    color: $gray-lighter;
+  }
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+  > li {
+    margin-bottom: px;
+  }
+}
+
+.post-meta {
+  color: $gray-light;
+  margin-right: 10px;
+}
+
+.post-link {
+  color: $gray-lighter;
+}
+
+/*===========================
+  --- Section contact ----
+=========================== */
+
+.contact {
+  background: $section-contact-bg;
+  text-align: center;
+  .section-icon {
+    @include icon-circle($section-contact-bg, $gray-lighter, 80px, 150px);
+    border: 1px solid $gray-lighter;
+  }
+  address a {
+    color: $delving-blue-light;
+  }
+}
+
+/*===========================
+  --- Section navigation ----
+=========================== */
+
+.section-nav {
+  &.navbar {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-height: 40px;
+    border: none;
+  }
+  a {
+    color: $white;
+    display: block;
+    @include border-radius(0px 0px 8px 8px);
+    width: 100px;
+    padding: 0 0 4px;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  &.intro {
+    background: $section-services-bg;
+    a {
+      background: $section-intro-bg;
+    }
+  }
+  &.services {
+    background: $section-open-source-bg;
+    a {
+      background: $section-services-bg;
+    }
+  }
+  &.open-source {
+    background: $section-articles-bg;
+    a {
+      background: $section-open-source-bg;
+    }
+  }
+  &.articles {
+    background: $section-contact-bg;
+    a {
+      background: $section-articles-bg;
+    }
+  }
+  &.contact {
+    background: $section-articles-bg;
+    a {
+      background: $section-contact-bg;
+    }
+  }
+}

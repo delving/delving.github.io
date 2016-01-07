@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Delving</title>
+    <description>Delving provides open-source solutions for the Cultural Heritage sector
+</description>
+    <link>http://www.delving.eu/</link>
+    <atom:link href="http://www.delving.eu/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 07 Jan 2016 13:12:21 +0100</pubDate>
+    <lastBuildDate>Thu, 07 Jan 2016 13:12:21 +0100</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>This is a test title for a post</title>
+        <description>
+</description>
+        <pubDate>Thu, 07 Jan 2016 11:48:38 +0100</pubDate>
+        <link>http://www.delving.eu/2016/01/07/test-post-two.html</link>
+        <guid isPermaLink="true">http://www.delving.eu/2016/01/07/test-post-two.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Delving en Total Active Media gaan samenwerkingsverband aan</title>
+        <description>
+</description>
+        <pubDate>Tue, 05 Jan 2016 11:48:38 +0100</pubDate>
+        <link>http://www.delving.eu/2016/01/05/delving-partners-with-tam.html</link>
+        <guid isPermaLink="true">http://www.delving.eu/2016/01/05/delving-partners-with-tam.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

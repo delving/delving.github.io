@@ -1,0 +1,387 @@
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+.highlight {
+  margin-bottom: 15px; }
+
+body {
+  background: #222222;
+  color: #eeeeee;
+  font-size: 16px;
+  font-weight: 300;
+  height: 100%;
+  line-height: 1.6em;
+  text-shadow: none; }
+
+/*===========================
+  --- Site header & branding ----
+=========================== */
+.site-header {
+  background: #016dac;
+  padding: 10px 0; }
+
+.site-branding {
+  line-height: 65px; }
+  .site-branding a {
+    color: #fff;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 200; }
+    .site-branding a:hover {
+      text-decoration: none; }
+  .site-branding img {
+    vertical-align: middle;
+    margin-right: 10px; }
+
+.site-nav {
+  text-align: right;
+  margin-top: 25px; }
+  .site-nav .page-link {
+    color: #fff;
+    padding-left: 10px; }
+
+@media (max-width: 1000px) {
+  .site-header,
+  .site-nav {
+    text-align: center; } }
+/*===========================
+  --- Section basics ----
+=========================== */
+.section {
+  margin: 0;
+  padding: 60px 0 60px 0; }
+  .section.thick {
+    padding: 100px 0 100px 0; }
+  .section .section-icon {
+    font-size: 5em;
+    text-align: center; }
+  .section .section-heading {
+    font-family: "source-serif-pro",Georgia,"Times New Roman",Times,serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em; }
+  .section .section-sub-heading {
+    font-weight: 100;
+    text-align: center;
+    font-size: 140%; }
+
+/*===========================
+  --- Intro section ----
+=========================== */
+.intro {
+  text-align: center; }
+
+/*===========================
+  --- Services section ----
+=========================== */
+.services {
+  background: #016dac;
+  text-align: center; }
+  .services .section-icon {
+    background: #049adb;
+    width: 148px;
+    height: 148px;
+    display: inline-block;
+    -webkit-border-radius: 148px;
+    -moz-border-radius: 148px;
+    -ms-border-radius: 148px;
+    border-radius: 148px;
+    position: relative;
+    border: 1px solid #fff; }
+    .services .section-icon i {
+      color: #eeeeee;
+      font-size: 80px;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin: auto;
+      width: 80px;
+      height: 80px; }
+  .services .section-heading {
+    font-weight: normal;
+    margin: 20px 0; }
+  .services .body {
+    color: #eeeeee; }
+  .services .service {
+    margin-bottom: 40px; }
+    @media (min-width: 1000px) {
+      .services .service {
+        margin-bottom: 0px; } }
+
+/*===========================
+  --- Open-source section ----
+=========================== */
+.open-source {
+  background: #333333;
+  text-align: center; }
+  .open-source .icon > svg {
+    display: inline-block;
+    width: 148px;
+    height: 148px;
+    vertical-align: middle; }
+    .open-source .icon > svg path {
+      fill: #999999; }
+  .open-source .section-heading {
+    margin-top: 20px; }
+
+/*===========================
+  --- Articles section ----
+=========================== */
+.articles {
+  background: #222222;
+  color: #eeeeee;
+  text-align: center; }
+  .articles .section-icon {
+    background: #999999;
+    width: 148px;
+    height: 148px;
+    display: inline-block;
+    -webkit-border-radius: 148px;
+    -moz-border-radius: 148px;
+    -ms-border-radius: 148px;
+    border-radius: 148px;
+    position: relative; }
+    .articles .section-icon i {
+      color: #222222;
+      font-size: 80px;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin: auto;
+      width: 80px;
+      height: 80px; }
+  .articles .section-heading {
+    font-weight: normal;
+    margin: 20px 0; }
+  .articles .body {
+    color: #eeeeee; }
+
+.post-list {
+  margin-left: 0;
+  list-style: none; }
+  .post-list > li {
+    margin-bottom: px; }
+
+.post-meta {
+  color: #999999;
+  margin-right: 10px; }
+
+.post-link {
+  color: #eeeeee; }
+
+/*===========================
+  --- Section contact ----
+=========================== */
+.contact {
+  background: #016dac;
+  text-align: center; }
+  .contact .section-icon {
+    background: #016dac;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -ms-border-radius: 150px;
+    border-radius: 150px;
+    position: relative;
+    border: 1px solid #eeeeee; }
+    .contact .section-icon i {
+      color: #eeeeee;
+      font-size: 80px;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin: auto;
+      width: 80px;
+      height: 80px; }
+  .contact address a {
+    color: #3EB8ED; }
+
+/*===========================
+  --- Section navigation ----
+=========================== */
+.section-nav.navbar {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 40px;
+  border: none; }
+.section-nav a {
+  color: #fff;
+  display: block;
+  -webkit-border-radius: 0px 0px 8px 8px;
+  -moz-border-radius: 0px 0px 8px 8px;
+  -ms-border-radius: 0px 0px 8px 8px;
+  border-radius: 0px 0px 8px 8px;
+  width: 100px;
+  padding: 0 0 4px;
+  text-align: center;
+  font-size: 1.5em; }
+.section-nav.intro {
+  background: #016dac; }
+  .section-nav.intro a {
+    background: #222222; }
+.section-nav.services {
+  background: #333333; }
+  .section-nav.services a {
+    background: #016dac; }
+.section-nav.open-source {
+  background: #222222; }
+  .section-nav.open-source a {
+    background: #333333; }
+.section-nav.articles {
+  background: #016dac; }
+  .section-nav.articles a {
+    background: #222222; }
+.section-nav.contact {
+  background: #222222; }
+  .section-nav.contact a {
+    background: #016dac; }
+
+/**
+ * Syntax highlighting styles
+ */
+.highlight {
+  background: #fff;
+  padding: 0px 5px; }
+  .highlighter-rouge .highlight {
+    background: #eef; }
+  .highlight .c {
+    color: #998;
+    font-style: italic; }
+  .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2; }
+  .highlight .k {
+    font-weight: bold; }
+  .highlight .o {
+    font-weight: bold; }
+  .highlight .cm {
+    color: #998;
+    font-style: italic; }
+  .highlight .cp {
+    color: #999;
+    font-weight: bold; }
+  .highlight .c1 {
+    color: #998;
+    font-style: italic; }
+  .highlight .cs {
+    color: #999;
+    font-weight: bold;
+    font-style: italic; }
+  .highlight .gd {
+    color: #000;
+    background-color: #fdd; }
+  .highlight .gd .x {
+    color: #000;
+    background-color: #faa; }
+  .highlight .ge {
+    font-style: italic; }
+  .highlight .gr {
+    color: #a00; }
+  .highlight .gh {
+    color: #999; }
+  .highlight .gi {
+    color: #000;
+    background-color: #dfd; }
+  .highlight .gi .x {
+    color: #000;
+    background-color: #afa; }
+  .highlight .go {
+    color: #888; }
+  .highlight .gp {
+    color: #555; }
+  .highlight .gs {
+    font-weight: bold; }
+  .highlight .gu {
+    color: #aaa; }
+  .highlight .gt {
+    color: #a00; }
+  .highlight .kc {
+    font-weight: bold; }
+  .highlight .kd {
+    font-weight: bold; }
+  .highlight .kp {
+    font-weight: bold; }
+  .highlight .kr {
+    font-weight: bold; }
+  .highlight .kt {
+    color: #458;
+    font-weight: bold; }
+  .highlight .m {
+    color: #099; }
+  .highlight .s {
+    color: #d14; }
+  .highlight .na {
+    color: #008080; }
+  .highlight .nb {
+    color: #0086B3; }
+  .highlight .nc {
+    color: #458;
+    font-weight: bold; }
+  .highlight .no {
+    color: #008080; }
+  .highlight .ni {
+    color: #800080; }
+  .highlight .ne {
+    color: #900;
+    font-weight: bold; }
+  .highlight .nf {
+    color: #900;
+    font-weight: bold; }
+  .highlight .nn {
+    color: #555; }
+  .highlight .nt {
+    color: #000080; }
+  .highlight .nv {
+    color: #008080; }
+  .highlight .ow {
+    font-weight: bold; }
+  .highlight .w {
+    color: #bbb; }
+  .highlight .mf {
+    color: #099; }
+  .highlight .mh {
+    color: #099; }
+  .highlight .mi {
+    color: #099; }
+  .highlight .mo {
+    color: #099; }
+  .highlight .sb {
+    color: #d14; }
+  .highlight .sc {
+    color: #d14; }
+  .highlight .sd {
+    color: #d14; }
+  .highlight .s2 {
+    color: #d14; }
+  .highlight .se {
+    color: #d14; }
+  .highlight .sh {
+    color: #d14; }
+  .highlight .si {
+    color: #d14; }
+  .highlight .sx {
+    color: #d14; }
+  .highlight .sr {
+    color: #009926; }
+  .highlight .s1 {
+    color: #d14; }
+  .highlight .ss {
+    color: #990073; }
+  .highlight .bp {
+    color: #999; }
+  .highlight .vc {
+    color: #008080; }
+  .highlight .vg {
+    color: #008080; }
+  .highlight .vi {
+    color: #008080; }
+  .highlight .il {
+    color: #099; }
