@@ -194,9 +194,6 @@ body {
       }
     }
   }
-  .section-heading {
-    margin-top: 20px;
-  }
 }
 
 /*===========================
@@ -209,14 +206,6 @@ body {
   text-align: center;
   .section-icon {
     @include icon-circle($gray-light, $gray-darker, 80px, 148px);
-    //border: 1px solid $gray-light;
-  }
-  .section-heading {
-    font-weight: normal;
-    margin: 20px 0;
-  }
-  .body {
-    color: $gray-lighter;
   }
 }
 

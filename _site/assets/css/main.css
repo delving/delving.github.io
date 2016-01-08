@@ -167,8 +167,6 @@ body {
     vertical-align: middle; }
     .open-source .icon > svg path {
       fill: #999999; }
-  .open-source .section-heading {
-    margin-top: 20px; }
 
 /*===========================
   --- Articles section ----
@@ -198,11 +196,6 @@ body {
       margin: auto;
       width: 80px;
       height: 80px; }
-  .articles .section-heading {
-    font-weight: normal;
-    margin: 20px 0; }
-  .articles .body {
-    color: #eeeeee; }
 
 .post-list {
   margin-left: 0;
