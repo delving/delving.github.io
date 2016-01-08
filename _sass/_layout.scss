@@ -18,12 +18,13 @@ body {
 }
 
 .site-branding {
-  line-height: 65px;
+  float: left;
   a {
     color: $white;
     display: inline-block;
-    font-size: 2em;
-    font-weight: 200;
+    font-size: 1.5em;
+    font-weight: 100;
+    letter-spacing: 1px;
     &:hover {
       text-decoration: none;
     }
@@ -36,17 +37,78 @@ body {
 
 .site-nav {
   text-align: right;
-  margin-top: 25px;
+  //margin-top: 25px;
+
+}
+
+
+/*===========================
+  --- Site navigation ----
+=========================== */
+
+.site-nav {
+  float: right;
+
+  .menu-icon {
+    display: none;
+  }
+
   .page-link {
     color: $white;
     padding-left: 10px;
   }
-}
 
-@media (max-width: 1000px) {
-  .site-header,
-  .site-nav {
-    text-align: center;
+  .nav-list {
+    margin: 15px 0 0 0;
+    li {
+      display: inline-block;
+    }
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 18px;
+    z-index: 10000;
+    right: $spacing-unit / 2;
+    background-color: $white;
+    border-radius: 4px;
+    text-align: right;
+    .menu-icon {
+      display: block;
+      float: right;
+      line-height: 0;
+      padding: 4px 8px;
+      text-align: center;
+      > svg {
+        width: 24px;
+        height: 24px;
+
+        path {
+          fill: $delving-blue;
+        }
+      }
+    }
+
+    .trigger {
+      clear: both;
+      display: none;
+    }
+
+    &:hover .trigger {
+      display: block;
+    }
+
+    .nav-list li {
+      display: block;
+      clear: both;
+    }
+
+    .page-link {
+      display: block;
+      color: $delving-blue;
+      padding: 5px 10px;
+      //background: green;
+    }
   }
 }
 
@@ -57,6 +119,9 @@ body {
 .section {
   margin: 0;
   padding: 60px 0 60px 0;
+  @media (max-width: 1000px) {
+    padding: 30px 0 30px 0;
+  }
   &.thick {
     padding: 100px 0 100px 0;
   }
@@ -65,9 +130,8 @@ body {
     text-align: center;
   }
   .section-heading {
-    //font-weight: 100;
   font-family: "source-serif-pro",Georgia,"Times New Roman",Times,serif;
-    //margin-top: 0px;
+    margin: 40px 0;
     text-align: center;
     text-transform: uppercase;
     font-size: 1.5em;
@@ -100,10 +164,6 @@ body {
     border: 1px solid $white;
   }
 
-  .section-heading {
-    font-weight: normal;
-    margin: 20px 0;
-  }
   .body {
     color: $gray-lighter;
   }

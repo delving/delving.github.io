@@ -39,6 +39,9 @@ $section-blog-bg: $gray-darker;
 
 $spacing-unit:     30px;
 
+$on-palm:          600px;
+$on-laptop:        800px;
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
@@ -67,6 +70,12 @@ $spacing-unit:     30px;
   }
 }
 
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -74,5 +83,8 @@ $spacing-unit:     30px;
   margin-bottom: $spacing-unit / 2;
 }
 
+img {
+  max-width: 100%;
+}
 
 @import "layout", "syntax-highlighting";
