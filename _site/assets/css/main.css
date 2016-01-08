@@ -281,6 +281,12 @@ body {
   .section-nav.contact a {
     background: #016dac; }
 
+/*===========================
+  --- Footer ----
+=========================== */
+.site-footer {
+  padding: 20px 0; }
+
 /**
  * Syntax highlighting styles
  */

@@ -1,7 +1,18 @@
 <footer class="site-footer">
 
   <div class="container">
-
+    <ul class="list-inline">
+      <!--{% for my_page in site.pages %}-->
+      <!--{% if my_page.title %}-->
+      <!--<li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>-->
+      <!--{% endif %}-->
+      <!--{% endfor %}-->
+      <li><a class="page-link" data-scroll href="{{ '/#welcome' | prepend: site.baseurl }}">Home</a></li>
+      <li><a class="page-link" data-scroll href="{{ '/#services' | prepend: site.baseurl }}">Services</a></li>
+      <li><a class="page-link" data-scroll href="{{ '/#open-source' | prepend: site.baseurl }}">Open Source</a></li>
+      <li><a class="page-link" data-scroll href="{{ '/#articles' | prepend: site.baseurl }}">Articles</a></li>
+      <li><a class="page-link" data-scroll href="{{ '/#contact' | prepend: site.baseurl }}">Contact</a></li>
+    </ul>
   </div>
 
 </footer>
